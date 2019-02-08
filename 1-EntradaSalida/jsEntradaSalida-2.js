@@ -4,8 +4,8 @@ function Mostrar()
 {
 	var nombre
     
-    nombre=prompt ("ingrese su nombre")
+    nombre=prompt ("ingrese su nombre");
 
-    alert=("Su nombre es" + nombre );
+    alert("Su nombre es "  + nombre);
 }
 
