@@ -9,53 +9,46 @@ function Rectangulo ()
     var largo;
     var ancho;
     var alambre;
-    var perimetro;
+    var perimetro,
 
     largo=parseFloat(document.getElementById("Largo").value);
     ancho=parseFloat(document.getElementById("Ancho").value);
-    
+
     perimetro= (largo+ancho)*2;
-    alambre= perimetro *3; 
-     
-   
-    alert("La cantidad de alambre a comprar es de : "+alambre);
+    alambre= perimetro*3;
+
+    alert("La cantidad de alambre a comprar es de " + alambre+ " metros");
 
 
 }
 function Circulo () 
 {
-    var radio;
     var alambre;
+    var radio;
     var perimetro;
 
     radio=parseFloat(document.getElementById("Radio").value);
+    perimetro= Math.PI * radio * 2;
+    alambre= perimetro * 3;
 
-    perimetro=2*Math.PI*radio;
-
-    var alambre= perimetro*3;
-
-    alert("Cantidad de alambre que se debe comprar es de :"+ alambre);
-
-
-
-
+    alert("La cantidad de alambre a comprar es de " + alambre + " metros");
 	
 }
 function Materiales () 
 {
+    var cemento;
+    var cal;
     var largo;
     var ancho;
-    var cal;
-    var cemento;
     var superficie;
 
-    largo=parseFloat(documento.getElementById("Largo").value);
+    largo=parseFloat(document.getElementById("Largo").value);
     ancho=parseFloat(document.getElementById("Ancho").value);
 
-    superficie= largo * ancho;
+    superficie=largo * ancho;
     cemento= superficie * 2;
-    cal= superficie * 3;
-    
-    alert("Para hacer un contrapiso de :"+ superficie+ "M2 se necesitan :"+ cemento+" Bolsas de cemento y "+ cal + "Bolsas de cal");
+    cal= superficie* 3;
+
+    alert("Se debe comprar "+ cemento+" bolsas de cemento y "+ cal+" bolsas de cal" );
 	
 }
