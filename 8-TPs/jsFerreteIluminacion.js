@@ -10,5 +10,43 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+     var cantidad;
+     var marca;
+     var preciodescuento;
+     cantidad=parseFloat(document.getElementById("Cantidad").value);
+     marca=parseFloat(document.getElementById("Marca").value);
+     preciodescuento=parseFloat(document.getElementById("precioDescuento").value);
+
+     if(cantidad>=6)
+     {cantidad=cantidad*35;
+     preciodescuento= cantidad-(cantidad*50/100);
+
+     document.getElementById("precioDescuento").value=preciodescuento;}
+
+     //HASTA ACA TODO BIEN//
+     else if(cantidad==5 && marca== "Argentinaluz")
+     {preciodescuento=cantidad-(cantidad*40/100);
+    document.getElementById("precioDescuento").value=preciodescuento;
 }
+     else
+    {preciodescuento=cantidad-(cantidad*30/100);
+    document.getElementById("precioDescuento").value=preciodescuento;
+}
+     if(cantidad==4 && marca== "Argentinaluz"|| "Felipelamparas")
+          {preciodescuento=cantidad-(cantidad*25/100);
+          document.getElementById("precioDescuento").value=preciodescuento;}
+
+          else{
+               preciodescuento=cantidad-(cantidad*20/100);
+          }
+     if(cantidad ==3 && marca =="Argentinaluz")
+     { preciodescuento=cantidad-(cantidad*15/100);}
+     else if(cantidad==3 && marca=="Felipelamparas")
+     {preciodescuento=cantidad-(cantidad*10/100);}
+     else{preciodescuento=cantidad-(cantidad*5/100);}
+     
+          if(preciodescuento>=120)
+     { iibb=(preciodescuento*10/100)+preciodescuento
+     alert("Usted pago "+ preciodescuento.toFixed(2)+ " siendo "+ iibb.toFixed(2)+ " el impuesto que se pago");}
+}
+
