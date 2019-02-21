@@ -10,11 +10,11 @@ switch(mesDelAño)
     break;
 
     case "Marzo":
-    alert("A clases =(");
+    alert("A clases!!");
     break;
 
     case "Julio":
-    alert("Se vienen las vacaciones XD");
+    alert("Se vienen las vaciones!!");
     break;
 
     case "Diciembre":
@@ -22,7 +22,7 @@ switch(mesDelAño)
     break;
 
     default:
-    alert("Mes normal sin mensaje");
+    alert("Mes del año sin mensaje!");
 }
 
 
