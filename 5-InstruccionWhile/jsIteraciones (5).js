@@ -3,14 +3,11 @@ function Mostrar()
 
 var sexo = prompt("ingrese f ó m .");
 
-while(!(sexo=="m"|| sexo=="f"))
-{
-    alert("Incorrecto");
-    sexo=(prompt("Intente de nuevo"));
-    document.getElementById("Sexo").value=sexo;
-}
+while(!(sexo=="f" || sexo=="m")){
+    
+    sexo=prompt("Error.Intente nuevamente");
 
-alert("Correcto");
-document.getElementById("Sexo").value=sexo;
+}
+document.getElementById('Sexo').value=sexo;
 
 }//FIN DE LA FUNCIÓN

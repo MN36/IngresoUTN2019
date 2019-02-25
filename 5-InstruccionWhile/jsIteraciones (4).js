@@ -1,15 +1,14 @@
 function Mostrar()
 {
 
-	var numero =parseInt(prompt("ingrese un número entre 0 y 10."));
+	var numero = prompt("ingrese un número entre 0 y 10.");
 
-	while(!(numero >=0 && numero <=9))
-	{
-		
-		numero=parseInt(prompt("Numero Incorrecto"));
-	   
+	while(!(numero >=0 && numero<=9)){
+		numero=prompt("Numero incorrecto,intente nuevamente");
 	}
+
+	alert("Numero CORRECTO!");
 	document.getElementById("Numero").value=numero;
-     alert("Numero correcto");
+
 
 }//FIN DE LA FUNCIÓN
