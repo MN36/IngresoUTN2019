@@ -1,21 +1,20 @@
-function Mostrar()
-{
+function Mostrar() {
 
-	var contador=0;
-	var acumulador=0;
-	var respuesta="si";
+	var contador = 0;
+	var acumulador = 0;
 	var numero;
+	var respuesta;
 
-	do{
-		numero=prompt("Ingrese su numero");
-		acumulador=numero+acumulador;
-		respuesta=prompt("Desea continuar?")
+	do {
+		numero = parseInt(prompt("Ingrese su numero"));
+		respuesta = prompt("Desea continuar?").tolowercase();
+		acumulador = acumulador + numero;
 		contador++;
 
-	}while(respuesta=="si");
-	suma=acumulador;
-	promedio=acumulador/contador;
- document.getElementById("suma").value=acumulador;
- document.getElementById("promedio").value=promedio;
+	} while (respuesta == "Si");
+		promedio = acumulador / contador;
+
+	document.getElementById('suma').value = acumulador;
+	document.getElementById('promedio').value = promedio;
 
 }//FIN DE LA FUNCIÓN
