@@ -3,11 +3,9 @@ function Mostrar() {
     var base;
     var perimetro;
 
-
-    base = parseInt(document.getElementById("lado").value);
+    base =parseInt(document.getElementById("lado").Value);
     perimetro = base * 3;
-    alert("El perimetro es de: " + perimetro);
-
+    alert("El perimetro es de " + perimetro);
 
 
 

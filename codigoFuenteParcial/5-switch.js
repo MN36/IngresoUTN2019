@@ -2,19 +2,17 @@
 function Mostrar() {
     var mes;
 
-    mes = prompt("Ingrese un mes");
+    mes = prompt("Ingrese su mes").toLocaleLowerCase(mes);
 
     switch (mes) {
         case "enero":
         case "febrero":
-            alert("Veranito =)");
+            alert("Veranito!");
             break;
 
         default:
-        alert("Extraño Enero y Febrero");
+            alert("Extraño Enero y Febrero");
     }
-
-
 
 
 }

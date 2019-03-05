@@ -1,19 +1,24 @@
 //Debemos lograr mostrar un mensaje al presionar el botón  'MOSTRAR'.
-function Mostrar() {
+function Mostrar()
+{
     var numero1;
     var numero2;
     var resultado;
-    var mensaje;
+    numero1=parseInt(prompt("Ingrese su primer numero"));
+    numero2=parseInt(prompt("Ingrese su segundo numero"));
 
-    numero1 = parseInt(prompt("Ingrese su numero"));
-    numero1 = parseInt(prompt("Ingrese su numero"));
-
-    if () {
-        resultado = numero1 * numero2;
-        mensaje = "El producto es " + resultado;
+    if(numero1==numero2){
+        resultado=numero1*numero2;
     }
-    else if () { }
-    else { }
-    document.write(mensaje);
+    if(numero1>numero2){
+        resultado=numero1-numero2;
+    }
+    else{
+        resultado=numero1+numero2;
+    }
+    document.write("El resultado es de "+resultado);
+
+	
+
 }
 
